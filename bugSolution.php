@@ -1,0 +1,1 @@
+function foo(int $a, int $b): int { return $a + $b; } function bar(int $x): void { $y = foo($x, 5); if (is_int($y)) { echo $y; } else { echo "Error: Unexpected return type from foo()\n"; } } bar(3); //Correct usage bar(3.14); //Demonstrates error handling
